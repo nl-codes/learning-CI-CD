@@ -9,4 +9,4 @@ jobs:
         runs-on: ubuntu-slim
         steps:
             - name: Echo variables named VAR_ANIME
-              run : echo "VAR_ANIME contains ${{ vars.MY_ANIME}}"
+              run : echo "VAR_ANIME contains ${{ vars.VAR_ANIME}}"
