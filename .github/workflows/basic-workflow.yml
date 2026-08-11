@@ -1,0 +1,12 @@
+name: Learning Basics of workflow
+on:
+    workflow_dispatch:
+    push:
+        branches: ["master"]
+jobs:
+    echo-vars-and-secrets:
+        name: 1 - Echo variables and secrets stored in github
+        runs-on: ubuntu-slim
+        steps:
+            - name: Echo variables named VAR_ANIME
+              run : echo "VAR_ANIME contains ${{ vars.MY_ANIME}}"
