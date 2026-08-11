@@ -9,6 +9,7 @@ jobs:
   echo-vars-and-secrets:
     name: 1 - Echo variables and secrets stored in github
     runs-on: ubuntu-latest
+    environment: learning-ci-cd
     steps:
       - name: Echo variables named VAR_ANIME
         run: echo "VAR_ANIME contains ${{ vars.VAR_ANIME }}"
